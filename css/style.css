@@ -81,11 +81,12 @@ a.grey-text {
 }
 
 
-/* Dashboard */
+/* Header */
 
-.dashboard-header {
+.header {
   position: relative;
   background-color: #ffffff;
+  width: 1560px;
   height: 80px;
 }
 
@@ -100,39 +101,75 @@ a.grey-text {
 }
 
 .menu-bar {
+  width: 18px;
+  height: 18px;
   margin-left: 30px;
 }
 
-.logo-dashboard {
+.logo-header {
   margin: 25px;
   width: 142px;
   height: 30px;
 }
 
 .search-icon {
-  width: 16px;
-  height: 16px;
-  margin: 0 12px 0 50px;
+  width: 18px;
+  height: 18px;
+  margin: 0 10px 0 50px;
 }
 
-.dashboard-text {
+.header-text {
   font: normal normal 400 16px/21px Roboto;
 }
 
 .notification-icon {
-  width: 22px;
-  height: 21px;
-  margin-right: 52px;
+  width: 25px;
+  height: 25px;
+  margin-right: 40px;
 }
 
 .profile-photo {
   width: 44px;
   height: 44px;
-  margin: 18px;
+  margin: 18px 12px;
 }
 
 .select-downward {
   width: 20px;
+  height: 20px;
+  margin-right: 42px;
+}
+
+/* Sidebar */
+
+.side-bar {
+  background-color: #ffffff;
+  width: 242px;
+  height: 1279px;
+  padding: 25px 30px
+}
+
+.side-list {
+  padding: 10px 0px 12px 20px;
+  margin-bottom: 8px;
+  font: normal normal normal 16px/21px Roboto;
+}
+
+.side-list a {
+  color: #3e3e3e;
+}
+
+.active a {
+  color: #C8242F;
+}
+
+.active {
+  border-radius: 5px;
+  background-color: #FFF3F4;
+}
+
+.list-img {
+  width: 16px;
   height: 16px;
-  margin: 0 42px 0 12px;
+  margin-right: 5px;
 }
