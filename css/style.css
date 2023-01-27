@@ -1,9 +1,11 @@
 body {
   position: relative;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   width: 1560px;
-  height: 720px;
 }
+
+
+/* login page */
 
 .left-container {
   float: left;
@@ -80,7 +82,6 @@ a.grey-text {
   border-radius: 23px;
 }
 
-
 /* Header */
 
 .header {
@@ -143,10 +144,11 @@ a.grey-text {
 /* Sidebar */
 
 .side-bar {
+  float: left;
   background-color: #ffffff;
   width: 242px;
   height: 1279px;
-  padding: 25px 30px
+  padding: 25px 30px;
 }
 
 .side-list {
@@ -160,16 +162,137 @@ a.grey-text {
 }
 
 .active a {
-  color: #C8242F;
+  color: #c8242f;
 }
 
 .active {
   border-radius: 5px;
-  background-color: #FFF3F4;
+  background-color: #fff3f4;
 }
 
 .list-img {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   margin-right: 5px;
+}
+
+/* dashboard */
+
+.container {
+  float: left;
+  padding: 40px 50px 28px;
+  width: 1318px;
+}
+
+.title {
+  font: normal normal 500 30px/39px Roboto;
+  margin-bottom: 8px;
+}
+
+.row {
+  margin: auto -15px;
+}
+
+.box {
+  padding: 0 30px;
+  margin: 15px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.stats-img {
+  float: left;
+  margin: 38px auto;
+  width: 40px;
+  height: 40px;
+}
+
+.stats-details {
+  float: left;
+  margin: 30px auto 30px 12px;
+  font: normal normal normal 15px/20px Roboto;
+  color: #3e3e3e;
+}
+
+.stats-number {
+  font: normal normal 500 25px/33px Roboto;
+}
+
+.sub-title {
+  float: left;
+  margin: 22px auto;
+  font: normal normal 500 22px/29px Roboto;
+  color: #3e3e3e;
+}
+
+.sales-nav {
+  float: right;
+  margin: 18px auto;
+}
+.sn {
+  font: normal normal normal 12px/16px Roboto;
+  color: #adadad;
+  margin-left: 18px;
+}
+.sn-active {
+  color: #c8242f;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #c8242f;
+}
+
+.data-graph {
+  margin-bottom: 30px;
+}
+
+.pie-details {
+  padding-bottom: 20px;
+  font: normal normal normal 15px/20px Roboto;
+  color: #3e3e3e;
+}
+
+.dot{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: auto 10px;
+  display: inline-block;
+}
+
+.dot-red {
+  background-color: #c8242f;
+}
+.dot-green {
+  background-color: #A2B86C;
+}
+.dot-orange {
+  background-color: #F16C20;
+}
+.dot-yellow {
+  background-color: #EBC844;
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+}
+
+/* table */
+thead {
+  font: normal normal normal 15px/20px Roboto;
+  letter-spacing: 1.5px;
+  color: #adadad;
+}
+
+tbody {
+  font: normal normal normal 15px/20px Roboto;
+  color: #3e3e3e;
+}
+
+.invoice-table > tbody > tr > td,
+.invoice-table > tbody > tr > th,
+.invoice-table > tfoot > tr > td,
+.invoice-table > tfoot > tr > th,
+.invoice-table > thead > tr > td,
+.invoice-table > thead > tr > th {
+  padding: 13px;
 }
