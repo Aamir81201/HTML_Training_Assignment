@@ -296,3 +296,15 @@ tbody {
 .invoice-table > thead > tr > th {
   padding: 13px;
 }
+
+
+/* innerpage */
+
+.form-control {
+  margin-bottom: 20px; 
+}
+
+.subtitle-2{
+  font: normal normal 500 18px/24px Roboto;
+    color: #3E3E3E;
+}
