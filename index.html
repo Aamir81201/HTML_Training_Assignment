@@ -9,7 +9,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
+
     <!-- Google-Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,22 +19,48 @@
 </head>
 
 <body>
-    <div class="left-container">
-        <img class="hero-image" src="images/hero-image.png" alt="hero-image">
-    </div>
+    <div class="container-fluid login-container">
+        <div class="row">
+            <div class="col-xl-7 col-lg-6 col-md-11 center">
+                <img class="hero-image" src="images/hero-image.png" alt="hero-image">
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-12 left-container">
+                <div class="row">
+                    <div class="col">
+                        <img class="logo" src="images/logo.svg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-10 col-lg-12">
+                        <h1 class="moto">We are <strong class="red">experts</strong> in business, marketing, growth, &
+                            sales.
+                        </h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="message">Login into your account</h2>
+                    </div>
+                </div>
 
-    <div class="right-container">
-        <img class="logo" src="images/logo.svg" alt="">
-        <h1 class="moto">We are <strong class="red">experts</strong> in business, marketing, growth, & sales.</h1>
-        <h2 class="message">Login into your account</h2>
-        <form class="form-container">
-            <input type="text" class="input-field" placeholder="Username">
-            <br>
-            <input type="password" class="input-field" placeholder="Password">
-            <br>
-            <input type="submit" value="Login" class="btn btn-danger"><a class="grey-text">Forgot Password?</a>
-        </form>
-        <p class="grey-text">Are you a new Member? <a class="red">Register here</a></p>
+                <div class="row">
+                    <div class="col-xl-8 col-lg-10 col-md-12">
+                        <form class="form-container">
+                            <input type="text" class="input-field" placeholder="Username">
+                            <br><br>
+                            <input type="password" class="input-field " placeholder="Password">
+                            <br> <br>
+                            <input type="submit" value="Login" class="btn btn-danger btn-login">
+                            <!-- <a class="grey-text">Forgot Password?</a> -->
+                        </form>
+                        <p class="grey-text">Are you a new Member? <a class="red">Register here</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
     </div>
 </body>
 
