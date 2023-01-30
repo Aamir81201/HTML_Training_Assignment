@@ -11,15 +11,6 @@ body {
   padding: 70px 15px;
 }
 
-.left-container {
-  /* padding: 0 100px; */
-  margin: auto;
-}
-
-.right-container {
-  margin: auto ;
-}
-
 .hero-image {
   max-width: 100%;
   height: auto;
@@ -32,13 +23,10 @@ body {
 
 
 .logo {
-  /* max-width: 100%; */
   margin: 20px auto;
 }
 
 .moto {
-  /* width: 500px;
-  height: 100px; */
   font-size: 40px;
   font-weight: 400;
   color: #3e3e3e;
@@ -62,7 +50,7 @@ body {
 
 .form-container {
   /* width: 429px; */
-  margin: 24px 0; 
+  margin: 24px 0;
 }
 
 .input-field {
@@ -125,7 +113,7 @@ a.grey-text {
 }
 
 .header-text {
-  font-size:16px;
+  font-size: 16px;
 }
 
 .notification-icon {
@@ -237,11 +225,13 @@ a.grey-text {
   float: right;
   margin: 18px auto;
 }
+
 .sn {
   font-size: 12px;
   color: #adadad;
   margin-left: 18px;
 }
+
 .sn-active {
   color: #c8242f;
   padding-bottom: 8px;
@@ -269,12 +259,15 @@ a.grey-text {
 .dot-red {
   background-color: #c8242f;
 }
+
 .dot-green {
   background-color: #a2b86c;
 }
+
 .dot-orange {
   background-color: #f16c20;
 }
+
 .dot-yellow {
   background-color: #ebc844;
 }
@@ -353,7 +346,8 @@ hr {
   opacity: 1;
   background-color: #ffffff;
 }
-.snackbar-img{
+
+.snackbar-img {
   height: 20px;
   width: 20px;
   margin: auto 5px auto -10px;
@@ -365,33 +359,39 @@ hr {
 
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
-  .moto{
-    font-size: 20px;
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .moto {
+    font-size: 36px;
   }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-  .moto{
+
+  .moto {
+    font-size: 32px;
+  }
+
+  .message {
+    font-size: 22px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 460px) {
+  .logo{
+    width: 200px;
+  }
+  .login-container{
+    padding: 15px;
+  }
+  .moto {
     font-size: 28px;
   }
-}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
-  .moto{
-    font-size: 36px;
+  .message {
+    font-size: 20px;
   }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (man-width: 1200px) {
-
 }
