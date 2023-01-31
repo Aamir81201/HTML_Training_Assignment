@@ -187,7 +187,15 @@ a.grey-text {
 }
 
 .box {
-  max-width: 100%;
+  overflow: hidden;
+  padding: 0 30px;
+  margin: 15px auto;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.box-3 {
+  overflow: hidden;
   padding: 0 30px;
   margin: 15px;
   background-color: #ffffff;
@@ -195,20 +203,22 @@ a.grey-text {
 }
 
 .stats-img {
+  margin: 10px 10px 10px 0;
   float: left;
-  margin: 38px auto;
-  /* margin: 10px auto; */
-  width: 40px;
-  height: 40px;
 }
 
+.box-1 {
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin: 15px auto;
+  padding: 20px 30px;
+}
 
 .stats-details {
-  width: 107px;
   float: left;
-  margin-top: 20px;
-  margin-left: 12px;
   font-size: 15px;
+  font-weight: 500;
   color: #3e3e3e;
 }
 
@@ -221,7 +231,6 @@ a.grey-text {
   float: left;
   margin: 22px auto;
   font-size: 22px;
-  font-weight: 500;
   color: #3e3e3e;
 }
 
@@ -243,22 +252,35 @@ a.grey-text {
 }
 
 .data-graph {
-  max-width: 90%;
+  max-width: 100%;
   margin-bottom: 30px;
 }
 
+.sales-chart{
+  clear: left;
+  margin: auto 20px;
+  text-align: center;
+}
+
 .pie-details {
+  text-align: left;
+  margin: auto;
+  line-height: 2;
   /* max-width: 100%; */
   padding-bottom: 20px;
   font-size: 15px;
   color: #3e3e3e;
 }
 
+.pie-chart{
+max-width: 100%;
+}
+
 .dot {
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  margin: auto 10px;
+  margin-right: 10px;
   display: inline-block;
 }
 
