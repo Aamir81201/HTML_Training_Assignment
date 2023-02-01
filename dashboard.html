@@ -7,7 +7,10 @@
     <title>Dashboard</title>
 
     <!-- CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Google-Fonts -->
@@ -21,10 +24,13 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="header">
+            <div class="col header">
                 <div class="left-header">
                     <div class="a">
-                        <img src="images/menu-bar.svg" alt="" class="menu-bar">
+                        <button class="btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"> <img
+                                src="images/menu-bar.svg" alt="" class="menu-bar">
+                        </button>
                         <img src="images/logo.svg" alt="" class="logo-header">
                         <img src="images/search-icon.svg" alt="" class="search-icon"><span
                             class="header-text">Search</span>
@@ -40,40 +46,52 @@
                 </div>
             </div>
         </div>
+
         <div class="row">
-            <div class="col-xl-2 col-lg-3 col-md-12 side-container">
-                <div class="side-bar">
-                    <div class="side-list active">
-                        <a href="#"><img src="images/dashboard-active.svg" alt="" class="list-img">
-                            <span class="side-text">Dashboard</span></a>
+            <div class="col-xl-2 col-lg-3 side-container">
+                <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasResponsive"
+                    aria-labelledby="offcanvasResponsiveLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Sidebar</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
                     </div>
-                    <div class="side-list">
-                        <a href="#"><img src="images/graph-default.svg" alt="" class="list-img">
-                            <span class="side-text">Analysis</span></a>
-                    </div>
-                    <div class="side-list">
-                        <a href="#"><img src="images/inbox-default.svg" alt="" class="list-img">
-                            <span class="side-text">Inbox</span></a>
-                    </div>
-                    <div class="side-list">
-                        <a href="#"><img src="images/clock-default.svg" alt="" class="list-img">
-                            <span class="side-text">History</span></a>
-                    </div>
-                    <div class="side-list">
-                        <a href="#"><img src="images/user-default.svg" alt="" class="list-img">
-                            <span class="side-text">Users</span></a>
-                    </div>
-                    <div class="side-list">
-                        <a href="#"></a><img src="images/maintenance-default.svg" alt="" class="list-img">
-                        <span class="side-text">Maintenance</span></a>
-                    </div>
-                    <div class="side-list">
-                        <a href="#"></a><img src="images/setting-default.svg" alt="" class="list-img">
-                        <span class="side-text">Setting</span></a>
+                    <div class="offcanvas-body">
+                        <div class="side-bar">
+                            <div class="side-list active">
+                                <a href="#"><img src="images/dashboard-active.svg" alt="" class="list-img">
+                                    <span class="side-text">Dashboard</span></a>
+                            </div>
+                            <div class="side-list">
+                                <a href="#"><img src="images/graph-default.svg" alt="" class="list-img">
+                                    <span class="side-text">Analysis</span></a>
+                            </div>
+                            <div class="side-list">
+                                <a href="#"><img src="images/inbox-default.svg" alt="" class="list-img">
+                                    <span class="side-text">Inbox</span></a>
+                            </div>
+                            <div class="side-list">
+                                <a href="#"><img src="images/clock-default.svg" alt="" class="list-img">
+                                    <span class="side-text">History</span></a>
+                            </div>
+                            <div class="side-list">
+                                <a href="#"><img src="images/user-default.svg" alt="" class="list-img">
+                                    <span class="side-text">Users</span></a>
+                            </div>
+                            <div class="side-list">
+                                <a href="#"></a><img src="images/maintenance-default.svg" alt="" class="list-img">
+                                <span class="side-text">Maintenance</span></a>
+                            </div>
+                            <div class="side-list">
+                                <a href="#"></a><img src="images/setting-default.svg" alt="" class="list-img">
+                                <span class="side-text">Setting</span></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-10 col-lg-9 col-md-12">
+            <div class="col col-xl-10 col-lg-9 col-md-12">
+
                 <div class="main-container">
                     <div class="row">
                         <h1 class="col title">Dashboard</h1>
@@ -187,7 +205,7 @@
                                 <h2 class="sub-title">Invoices</h2>
                                 <div class="sales-nav"><a href="#" class="sn"><span class="red">View All</span></a>
                                 </div>
-                                <div class="table-responsive">
+                                <div class="table-responsive center">
                                     <table class="table">
                                         <thead>
                                             <tr scope="row">
@@ -410,8 +428,6 @@
             </div>
         </div>
     </div>
-
-
 </body>
 
 </html>

@@ -8,6 +8,9 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Google-Fonts -->
@@ -21,10 +24,12 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="header">
+      <div class="col header">
         <div class="left-header">
           <div class="a">
-            <img src="images/menu-bar.svg" alt="" class="menu-bar">
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+              aria-controls="offcanvasResponsive"> <img src="images/menu-bar.svg" alt="" class="menu-bar">
+            </button>
             <img src="images/logo.svg" alt="" class="logo-header">
             <img src="images/search-icon.svg" alt="" class="search-icon"><span class="header-text">Search</span>
           </div>
@@ -39,40 +44,51 @@
         </div>
       </div>
     </div>
+
     <div class="row">
-      <div class="col-xl-2 col-lg-3 col-md-12 side-container">
-        <div class="side-bar">
-          <div class="side-list active">
-            <a href="#"><img src="images/dashboard-active.svg" alt="" class="list-img">
-              <span class="side-text">Dashboard</span></a>
-          </div>
-          <div class="side-list">
-            <a href="#"><img src="images/graph-default.svg" alt="" class="list-img">
-              <span class="side-text">Analysis</span></a>
-          </div>
-          <div class="side-list">
-            <a href="#"><img src="images/inbox-default.svg" alt="" class="list-img">
-              <span class="side-text">Inbox</span></a>
-          </div>
-          <div class="side-list">
-            <a href="#"><img src="images/clock-default.svg" alt="" class="list-img">
-              <span class="side-text">History</span></a>
-          </div>
-          <div class="side-list">
-            <a href="#"><img src="images/user-default.svg" alt="" class="list-img">
-              <span class="side-text">Users</span></a>
-          </div>
-          <div class="side-list">
-            <a href="#"></a><img src="images/maintenance-default.svg" alt="" class="list-img">
-            <span class="side-text">Maintenance</span></a>
-          </div>
-          <div class="side-list">
-            <a href="#"></a><img src="images/setting-default.svg" alt="" class="list-img">
-            <span class="side-text">Setting</span></a>
+      <div class="col-xl-2 col-lg-3 side-container">
+      <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasResponsive"
+        aria-labelledby="offcanvasResponsiveLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Sidebar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="side-bar">
+              <div class="side-list active">
+                <a href="#"><img src="images/dashboard-active.svg" alt="" class="list-img">
+                  <span class="side-text">Dashboard</span></a>
+              </div>
+              <div class="side-list">
+                <a href="#"><img src="images/graph-default.svg" alt="" class="list-img">
+                  <span class="side-text">Analysis</span></a>
+              </div>
+              <div class="side-list">
+                <a href="#"><img src="images/inbox-default.svg" alt="" class="list-img">
+                  <span class="side-text">Inbox</span></a>
+              </div>
+              <div class="side-list">
+                <a href="#"><img src="images/clock-default.svg" alt="" class="list-img">
+                  <span class="side-text">History</span></a>
+              </div>
+              <div class="side-list">
+                <a href="#"><img src="images/user-default.svg" alt="" class="list-img">
+                  <span class="side-text">Users</span></a>
+              </div>
+              <div class="side-list">
+                <a href="#"></a><img src="images/maintenance-default.svg" alt="" class="list-img">
+                <span class="side-text">Maintenance</span></a>
+              </div>
+              <div class="side-list">
+                <a href="#"></a><img src="images/setting-default.svg" alt="" class="list-img">
+                <span class="side-text">Setting</span></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-xl-10 col-lg-9 col-md-12">
+      <div class="col col-xl-10 col-lg-9 col-md-12">
         <div class="main-container">
           <!-- <div class="container-fluid  main-container"> -->
 
@@ -85,10 +101,10 @@
               <form>
                 <h2 class="sub-title">One Column</h2>
 
-                <div class="form-group">
+                <div class="mb-3">
                   <input type="name" class="form-control " id="name" placeholder="Name">
                 </div>
-                <div class="form-group">
+                <div class="mb-3">
                   <select class="form-control " id="Dropdown">
                     <option>Dropdown</option>
                     <option>Dropdown2</option>
@@ -96,7 +112,7 @@
                     <option>Dropdown4</option>
                   </select>
                 </div>
-                <div class="form-group">
+                <div class="mb-3">
                   <textarea class="form-control " id="exampleFormControlTextarea1" rows="5"
                     placeholder="Textarea"></textarea>
                 </div>
@@ -111,26 +127,26 @@
 
                 <div class="row">
                   <div class="col-sm-12 col-md-6">
-                    <div class="form-group">
+                    <div class="mb-3">
 
                       <input type="text" class="form-control " placeholder="First name">
                     </div>
                   </div>
 
                   <div class="col-sm-12 col-md-6">
-                    <div class="form-group">
+                    <div class="mb-3">
                       <input type="text" class="form-control " value="John Doe">
                     </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-sm-12 col-md-6">
-                    <div class="form-group">
+                    <div class="mb-3">
                       <input type="password" class="form-control " placeholder="Password">
                     </div>
                   </div>
                   <div class="col-sm-12 col-md-6">
-                    <div class="form-group">
+                    <div class="mb-3">
                       <select class="form-control " id="Dropdown">
                         <option>Dropdown</option>
                         <option>Dropdown2</option>
@@ -141,7 +157,7 @@
                   </div>
 
                 </div>
-                <div class="form-group">
+                <div class="mb-3">
                   <div class="row">
                     <div class="col">
                       <h2 class="sub-title">Three Column</h2>
@@ -149,23 +165,23 @@
                   </div>
                   <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-4">
-                      <div class="form-group">
+                      <div class="mb-3">
                         <input type="text" class="form-control " autofocus>
                       </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4">
-                      <div class="form-group">
+                      <div class="mb-3">
                         <input type="password" class="form-control " value="Password">
                       </div>
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-4">
-                      <div class="form-group">
+                      <div class="mb-3">
                         <input type="text" class="form-control " placeholder="Disabled" disabled>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="form-group">
+                <div class="mb-3">
                   <div class="row">
                     <div class="col">
                       <h2 class="sub-title">Four Column</h2>
@@ -174,13 +190,13 @@
 
                   <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-3">
-                      <div class="form-group">
+                      <div class="mb-3">
                         <input type="text" class="form-control is-invalid" placeholder="Desigation" value="UI Designer">
                         <small class="invalid-feedback ml-2">Enter valid data</small>
                       </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3">
-                      <div class="form-group">
+                      <div class="mb-3">
                         <input type="text" id="nameHelp" class="form-control " placeholder="Name">
                         <small id="nameHelp" class="form-text text-muted ml-2">
                           Enter your full Name as per ID
@@ -188,12 +204,12 @@
                       </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3">
-                      <div class="form-group">
+                      <div class="mb-3">
                         <input type="text" class="form-control " value="John Doe">
                       </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3">
-                      <div class="form-group">
+                      <div class="mb-3">
                         <select class="form-control " id="Dropdown">
                           <option>Select</option>
                           <option>Select2</option>
@@ -211,7 +227,7 @@
                 </div>
 
                 <!-- File Upload -->
-                <div class="form-group">
+                <div class="mb-3">
                   <h3 class="first subtitle-2">File Upload</h3>
                   <button class="btn btn-outline-danger upload-btn"><img src="images/cloud-upload-icon.svg" alt="">
                     Upload</button>
@@ -219,7 +235,7 @@
                 </div>
                 <br>
                 <!-- Radio Button -->
-                <div class="form-group">
+                <div class="mb-3">
                   <h3 class="subtitle-2">Radio Button</h3>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
@@ -235,7 +251,7 @@
                 <br>
 
                 <!-- checkbox -->
-                <div class="form-group">
+                <div class="mb-3">
                   <h3 class="subtitle-2">Checkbox</h3>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
@@ -249,7 +265,7 @@
                 <br>
 
                 <!-- Snackbar -->
-                <div class="form-group">
+                <div class="mb-3">
                   <h3 class="subtitle-2">Snackbar</h3>
                   <div class="row">
                     <div class="col-sm-12 col-md-6">
@@ -278,7 +294,7 @@
                 </div>
 
                 <!-- Call to Action -->
-                <div class="form-group">
+                <div class="mb-3">
                   <h3 class="subtitle-2">Call to Action</h3>
                   <button class="btn  btn-danger btn-innerpage">Primary</button>
                   <button class="btn  btn-outline-danger btn-innerpage">Secondary</button>
@@ -286,7 +302,7 @@
                 <br>
 
                 <!-- Tabs -->
-                <div class="form-group">
+                <div class="mb-3">
                   <h3 class="subtitle-2">Tabs</h3>
                   <span class="tab tab-active">Tab 1</span>
                   <span class="tab">Tab 2</span>
@@ -311,7 +327,6 @@
       </div>
     </div>
   </div>
-
 </body>
 
 </html>
