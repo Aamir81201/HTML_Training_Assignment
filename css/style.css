@@ -46,6 +46,7 @@ body {
 
 .form-container {
   /* width: 429px; */
+  overflow: hidden;
   margin: 24px 0;
 }
 
@@ -57,18 +58,16 @@ body {
   border-radius: 5px;
 }
 
-/* a {
-  text-decoration: none;
-}
-
-a.grey-text {
-  margin-left: 160px;
-} */
-
 .btn-login {
+  float: left;
   padding: 10px 46px;
   font-size: 18px;
   border-radius: 23px;
+}
+
+.btn-forgot {
+  float: right;
+  padding: 10px 0;
 }
 
 /* -----------------Header------------------ */
@@ -203,6 +202,8 @@ a.grey-text {
 }
 
 .stats-img {
+  width: 36px;
+  height: 36px;
   margin: 10px 10px 10px 0;
   float: left;
 }
@@ -217,6 +218,7 @@ a.grey-text {
 
 .stats-details {
   float: left;
+  width: max-content;
   font-size: 15px;
   font-weight: 500;
   color: #3e3e3e;
@@ -256,7 +258,7 @@ a.grey-text {
   margin-bottom: 30px;
 }
 
-.sales-chart{
+.sales-chart {
   clear: left;
   margin: auto 20px;
   text-align: center;
@@ -272,8 +274,8 @@ a.grey-text {
   color: #3e3e3e;
 }
 
-.pie-chart{
-max-width: 100%;
+.pie-chart {
+  max-width: 100%;
 }
 
 .dot {
@@ -306,6 +308,27 @@ max-width: 100%;
   clear: both;
 }
 
+.paid {
+  padding: 2px 10px;
+  color: #3CDD5F;
+  background-color: #EBFFEF;
+  border-radius: 5px;
+}
+
+.failed {
+  padding: 2px 10px;
+  color: #FF4545;
+  background-color: #FFF5F5;
+  border-radius: 5px;
+}
+
+.pending {
+  padding: 2px 10px;
+  color: #BABABA;
+  background-color: #F8F8F8;
+  border-radius: 5px;
+
+}
 
 /*--------------------------innerpage--------------------------- */
 
@@ -331,7 +354,7 @@ max-width: 100%;
 }
 
 .tab {
-  padding: 0 18px 14px;
+  padding: 0 16px 14px;
   font-size: 15px;
   color: #adadad;
 }
@@ -363,7 +386,6 @@ hr {
 .form-control {
   height: 50px;
 }
-
 
 
 @media only screen and (max-width: 992px) {
@@ -439,8 +461,8 @@ hr {
     /* padding: 10px 15px; */
   }
 
-  /* -------form----------*/
 
+  /* -------form----------*/
   .form-control {
     height: 35px;
     font-size: 15px;
